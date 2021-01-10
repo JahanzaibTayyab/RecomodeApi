@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   var colors = Colors();
   let success_200 = SuccessResponse.success_200;
   success_200.message = "List of all Seasons Colors!";
-  success_200.data.items = [colors];
+  success_200.data.items = colors;
   res.send(success_200);
 });
 
